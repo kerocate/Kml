@@ -1,0 +1,91 @@
+* {
+    position: relative;
+    margin: 0; padding: 0;
+    /* overflow: hidden; */
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+
+/* 展开画布 */
+
+[cfix] {
+    *zoom: 1;
+}
+
+[cfix]:before,
+[cfix]:after {
+    content: "";
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+
+
+/* 浮动闭合 */
+
+[div] {
+    display: block;
+}
+
+[flx] {
+    display: flex;
+}
+[flx*="Hc"] {
+    justify-content: center;
+}
+[flx*="Vc"] {
+    align-items: center;
+}
+
+[flo*=r]{
+    float:  right;
+}
+[flo*=l]{
+    float:  left;
+}
+
+[vis*=hid]{
+    visibility:  hidden;
+}
+[vis*=vis]{
+    visibility: visible;
+}
+
+[ove*=hid]{
+    overflow: hidden;
+}
+
+[full] {
+    height: 100%;
+    width: 100%;
+}
+
+page-1, page-2,page-3, page-4,
+page-5, page-6,page-7, page-8,
+page-9, page-10,page-11, page-12,
+page-13, page-14,page-15, page-16,
+page-17, page-18,page-19, page-20,
+page-21, page-22,page-23, page-24,
+page-25, page-26,page-27, page-28,
+page-29,page-30{
+    display: flex;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+[cover]{
+    z-index: 1;
+    position: absolute;
+}
+[cover*=P]{
+    height: 100%;
+    width: 100%;
+}

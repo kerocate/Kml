@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kml</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+    li,
+    ul {
+        list-style-type: none;
+        width: 150px;
+        background-color: azure;
+        height: 47px;
+        text-align: center;
+        line-height: 50px;
+        transition-property: height, opacity;
+        transition-duration: 1s, 0.25s;
+        border-bottom: #91f2ff 3px solid;
+    }
+    li {
+        height: 0px;
+        opacity: 0;
+    }
+
+    ul:hover>li {
+        height: 50px;
+        opacity: 1;
+    }
+
+    ul>ul {
+        position: absolute;
+    }
+
+    li>ul {
+        border-bottom: none;
+    }
+
+    li>ul>li {
+        left: 150px;
+        top: -50px;
+    }
+</style>
+
+<body>
+    <page-1 style="background: wheat;" z="3">
+        <ul>主页
+            <li>第1项</li>
+            <li>第2项</li>
+            <li>
+                <ul>关于我
+                    <li>第1项</li>
+                    <li>第2项</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- ul>li*2+li>ul>li*2 -->
+    </page-1>
+    <page-2 z="5">
+        make it center!
+    </page-2>
+</body>
+<script src="Core.js"></script>
+
+</html>
